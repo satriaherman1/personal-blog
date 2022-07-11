@@ -1,12 +1,12 @@
 .dark-mode-small-view > button.social-link {
   padding: 5px 10px;
   margin-right: 5px;
-  line-height: unset;
+
   height: fit-content;
 }
 
 .dark-mode-small-view {
-  line-height: 40px;
+  line-height: 29px;
 }
 @media screen and(min-width:768px) {
   .dark-mode-small-view > button.social-link {
