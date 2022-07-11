@@ -132,9 +132,14 @@ img {
 html {
   box-sizing: border-box;
   font-family: sans-serif;
-  overflow-x: hidden;
+
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+}
+
+html,
+body {
+  overflow-x: hidden !important;
 }
 *,
 *:before,
