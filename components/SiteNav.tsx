@@ -63,6 +63,9 @@ export const SiteNav = ({ settings, className, postTitle }: SiteNavProps) => {
     <nav className={className}>
       <div className="site-nav-left-wrapper">
         <div className="site-nav-left">
+          <div className="dark-mode-small-view">
+            <DarkMode {...{ settings }} />
+          </div>
           <Link href="/">
             {siteLogo && nextImages.feature ? (
               <a className="site-nav-logo">
@@ -83,8 +86,10 @@ export const SiteNav = ({ settings, className, postTitle }: SiteNavProps) => {
               <a className="site-nav-logo">{title}</a>
             )}
           </Link>
+
           <div className="site-nav-content">
             <Navigation data={navigation} />
+
             {postTitle && <span className={`nav-post-title ${site.logo ? `` : `dash`}`}>{postTitle}</span>}
           </div>
         </div>
