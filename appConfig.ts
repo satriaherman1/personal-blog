@@ -31,7 +31,7 @@ export type CommentingSystem = 'commento' | 'disqus' | null
 export const commenting: CommentingSystem = 'disqus'
 
 export const commentoUrl: string = 'https://cdn.commento.io' // 'https://commento.your-blog.com'
-export const disqusShortname: string = 'muhammadsatriaherman'
+export const disqusShortname: string = 'satria-herman-blog'
 
 // PrismJS
 export const prism: boolean = true
