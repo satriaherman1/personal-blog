@@ -8,8 +8,8 @@
 .dark-mode-small-view {
   line-height: 29px;
 }
-@media screen and(min-width:768px) {
-  .dark-mode-small-view > button.social-link {
+@media screen and (min-width: 768px) {
+  .dark-mode-small-view {
     display: none;
   }
 }
