@@ -48,6 +48,7 @@ function App({ Component, pageProps }: AppProps) {
               `,
           }}
         />
+
         <Component {...pageProps} />
       </OverlayProvider>
     </ThemeProvider>
