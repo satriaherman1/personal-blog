@@ -48,7 +48,7 @@ function App({ Component, pageProps }: AppProps) {
               `,
           }}
         />
-        {/* <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8579790092809420" crossOrigin="anonymous"></Script> */}
+        <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8579790092809420" crossOrigin="anonymous"></Script>
 
         <Component {...pageProps} />
       </OverlayProvider>
