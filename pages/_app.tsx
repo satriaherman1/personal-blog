@@ -31,6 +31,8 @@ function App({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider {...processEnv.darkMode}>
       <OverlayProvider>
+        <Component {...pageProps} />
+
         {/* Global site tag (gtag.js) - Google Analytics */}
         <Script strategy="afterInteractive" src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`} />
         <Script
@@ -49,8 +51,16 @@ function App({ Component, pageProps }: AppProps) {
           }}
         />
         <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8579790092809420" crossOrigin="anonymous"></Script>
-
-        <Component {...pageProps} />
+        <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8579790092809420" crossOrigin="anonymous"></Script>
+        <ins
+          className="adsbygoogle"
+          style={{ display: 'block', textAlign: 'center' }}
+          data-ad-layout="in-article"
+          data-ad-format="fluid"
+          data-ad-client="ca-pub-8579790092809420"
+          data-ad-slot="7577119726"
+        ></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({})</script>
       </OverlayProvider>
     </ThemeProvider>
   )
