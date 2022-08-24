@@ -27,6 +27,7 @@
   position: absolute;
   max-height: 300px;
   overflow-y: scroll;
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(39, 39, 39, 0.15) 0px 4px 20px 0px;
 }
 .search-result-box > div {
   display: flex;
