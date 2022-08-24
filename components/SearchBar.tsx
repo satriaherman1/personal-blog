@@ -36,7 +36,7 @@ const SearchBar = ({ placeholder, data: { posts } }: ISearchBar) => {
             ) : (
               searchResult.map((data: any) => (
                 <div key={data.uuid}>
-                  <Image src={data.featureImage.url} height={40} width={40} alt={data.title} />
+                  <img src={data.featureImage.url} height={40} width={40} alt={data.title} />
                   <div className="search-result-box-text">
                     <h4>
                       <Link href={`/${data.slug}`}>{data.title}</Link>
