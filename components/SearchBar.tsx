@@ -20,6 +20,7 @@ const SearchBar = ({ placeholder, data: { posts } }: ISearchBar) => {
     if (searchInput?.length > 2 || searchInput.length === 0) {
       const result = posts.filter((p: any) => pattern.test(p.title))
       setSearchResult(result)
+      console.log(result)
     }
   }, [searchInput])
 
@@ -49,7 +50,7 @@ const SearchBar = ({ placeholder, data: { posts } }: ISearchBar) => {
         )}
       </section>
 
-      <div className="search-before" onClick={() => setShowResult(false)}></div>
+      {showResult && <div className="search-before" onClick={() => setShowResult(false)}></div>}
     </>
   )
 }
