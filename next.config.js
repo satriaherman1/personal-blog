@@ -19,6 +19,7 @@ const defaultOptions = withBundleAnalyzer({
       'ghost.org',
       'repository-images.githubusercontent.com',
       'www.gravatar.com',
+      'blog.satriaherman.com',
       'github.githubassets.com',
       ...(process.env.IMAGE_DOMAINS || '').split(','),
     ],
