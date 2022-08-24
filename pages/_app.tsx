@@ -14,6 +14,7 @@ import '@styles/prism.css'
 import '@styles/toc.css'
 import '@styles/post-card.css'
 import '@styles/custom.css'
+import '@styles/components/search-bar.css'
 
 function App({ Component, pageProps }: AppProps) {
   const router = useRouter()
@@ -51,7 +52,7 @@ function App({ Component, pageProps }: AppProps) {
           }}
         />
         <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8579790092809420" crossOrigin="anonymous"></Script>
-        <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8579790092809420" crossOrigin="anonymous"></Script>
+
         <ins
           className="adsbygoogle"
           style={{ display: 'block', textAlign: 'center' }}

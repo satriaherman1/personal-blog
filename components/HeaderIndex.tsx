@@ -5,12 +5,14 @@ import { SiteNav } from '@components/SiteNav'
 import { HeaderBackground } from '@components/HeaderBackground'
 import { getLang, get } from '@utils/use-lang'
 import { GhostSettings, NextImage } from '@lib/ghost'
+import SearchBar from '@components/SearchBar'
 
 interface HeaderIndexProps {
   settings: GhostSettings
+  data: any
 }
 
-export const HeaderIndex = ({ settings }: HeaderIndexProps) => {
+export const HeaderIndex = ({ settings, data }: HeaderIndexProps) => {
   const text = get(getLang(settings.lang))
   const site = settings
   const siteLogo = site.logoImage
@@ -62,6 +64,7 @@ export const HeaderIndex = ({ settings }: HeaderIndexProps) => {
               )}
             </h1>
             <h2 className="site-description">{site.description}</h2>
+            <SearchBar data={data} placeholder="Mau cari artikel apa?" />
           </div>
         </div>
       </HeaderBackground>
