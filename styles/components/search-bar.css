@@ -58,3 +58,12 @@ h4 {
 .no-result {
   color: rgb(92, 92, 92);
 }
+
+.search-before {
+  width: 100vw;
+  height: 100vh;
+  z-index: 9;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
