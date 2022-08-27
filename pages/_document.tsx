@@ -3,6 +3,7 @@ import { resolve } from 'url'
 import { processEnv } from '@lib/processEnv'
 import { useEffect } from 'react'
 
+declare const window: any
 export default class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
     return await super.getInitialProps(ctx)
@@ -12,7 +13,7 @@ export default class MyDocument extends Document {
     const ads = document.querySelectorAll('adsbygoogle').length
     for (let i = 0; i < ads; i++) {
       try {
-        ;(adsbygoogle = window.adsbygoogle || []).push({})
+        ;(window.adsbygoogle = window.adsbygoogle || []).push({})
       } catch (e) {
         console.log(e)
       }
