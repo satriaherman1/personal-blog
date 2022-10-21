@@ -19,8 +19,9 @@ const SearchBar = ({ placeholder, data: { posts } }: ISearchBar) => {
   useEffect(() => {
     if (searchInput?.length > 2 || searchInput.length === 0) {
       const result = posts.filter((p: any) => pattern.test(p.title))
+      const truncateText = formatService.truncateText('9854609', 9)
+      console.log(truncateText)
       setSearchResult(result)
-      console.log(result)
     }
   }, [searchInput])
 
